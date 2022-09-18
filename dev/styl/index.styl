@@ -1,0 +1,197 @@
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  height 100%
+  background: aliceblue
+
+html 
+  height: 100%
+
+h2
+  margin: 50px 0
+  text-align: center
+  background: #e9967a
+
+
+.main
+  background-color: aliceblue
+  margin-bottom: 100px
+  display: inline-block
+  width: 100%
+  margin: 0 auto
+  padding: 0 10px
+
+.wrapper
+  width: 100%
+  &_main
+    margin-bottom: 150px
+    display: flex
+  &_player
+    width: 100%
+    height: 100px
+    position: fixed
+    bottom: 0
+    left: 0
+    background-color: darksalmon
+    z-index: 100
+  &__list
+    margin: 0 auto
+    width: 1000px
+
+
+
+
+.running__width
+  width: 1%
+  height: 20px
+  background-color: #474747
+  
+
+button
+  margin-top: 10px
+  margin-left: 10px
+  margin-bottom: 10px
+  cursor pointer
+  
+
+.player
+  height: 100%
+  &__running
+    background-color: antiquewhite
+    width: 100%
+    height: 20px
+  &__play
+    background: #006699
+    color: #f0ffff
+    width: 50px
+  &__pause
+    width: 50px
+  &__info
+    // height: 100%
+    height: 26%
+    padding: 7px
+    background-color: darkgray
+    display: flex
+    // padding: 10px
+  &__artistName
+    font-weight: bold
+    margin-right: 10px
+  &__trackName
+    margin-right: 10px
+  &__control
+    display: flex
+    justify-content: space-between
+  &__control-main
+    margin-left: 10px
+  &__additionally
+    margin-top: 13px
+    display flex
+  &__volume-bar
+    margin-top: 4px
+    padding: 0
+    overflow: hidden
+    display: inline-block
+    width: 100px
+    height: 4px
+    background: #d5d6c8
+    cursor: pointer
+    .volume-bar-value
+      cursor: pointer
+      background: #fff
+      width: 90%
+      height: 7px
+      transition: width 80ms linear,height 80ms linear
+
+
+
+
+.player__mute
+  display: block
+  cursor: pointer
+  height: 23px
+  width: 23px
+  margin-top: -5px
+  background: url(/dev/img/signs.png) -330px -8px no-repeat
+  &:hover
+    background: url(/dev/img/signs.png) -330px -48px no-repeat
+  &.actives
+    background: url(/dev/img/signs.png) -330px -88px no-repeat
+
+
+
+.player__repeat
+  cursor: pointer
+  width: 22px
+  height: 25px
+  background: url(/dev/img/signs.png) -169px -13px no-repeat
+  &:hover
+    background: url(/dev/img/signs.png) -169px -53px no-repeat
+  &.active
+    background: url(/dev/img/signs.png) -169px -93px no-repeat
+
+
+
+.player__additionally > *
+  margin-right: 2px
+
+
+button()
+  padding: 5px
+  color: azure
+  font-weight: bold
+  width: 50px
+  
+
+
+.track
+  display flex
+  padding 10px 0 10px 0
+  border-bottom: 1px solid grey
+  &__control
+    margin-right: 15px
+  &__artistName
+    font-weight: bold
+  &__play
+    button()
+    background: #006699
+  &.active
+    background-color: #faebd7
+  &.played &
+    &__play
+      background: #F0F0F0
+      color: black
+
+
+.player
+  &__pause
+    display: none
+  &__play
+    display: inline
+  .played &
+    &__pause
+      display inline
+    &__play
+      display: none
+  .paused &
+    &__pause
+      display none
+    &__play
+      display inline
+  &.played
+    background-color: pink
+
+
+
+.player button
+  margin-left: 0
+
+
+@media (min-width: 400px)
+  .player button
+    margin-left: 10px
+  .main
+    width: 60%
+    padding: 0
+  .player__additionally > *
+    margin-right: 10px

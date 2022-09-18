@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>player</title>
+
+    <link rel="stylesheet" href="build/style.css">
+
+    <script src="build/bundle.js" defer></script>
+
+</head>
+
+<body>
+    
+    <div class="wrapper wrapper_main">
+
+        <div class="main">
+            <h2 class="main__title">Музыка без авторских прав</h2>
+            <div class="main__container">
+
+                <div class="trackList trackList_main">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="wrapper wrapper_player">
+        <div class="player">
+            <audio class="audio"></audio>
+
+            <div class="player__running">
+                <div class="running__width"></div>
+            </div>
+
+            <div class="player__control">
+                <div class="player__control-main">
+                    <button class="player__play">Play</button>
+                    <button class="player__pause">Pause</button>
+                    <button class="player__prev">&#60;prev</button>
+                    <button class="player__next">next&#62;</button>
+                </div>
+                
+                <div class="player__additionally">
+                    <div class="player__repeat"></div>
+                    <div class="player__mute"></div>
+                    <div class="player__volume-bar">
+                        <div class="volume-bar-value"></div>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="player__info">
+                <div class="player__artistName"></div>
+                <div class="player__trackName"></div>
+                <div class="player__time"></div>
+            </div>
+
+            
+
+
+        </div>
+
+    </div>
+
+
+    
+
+</body>
+
+</html>

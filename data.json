@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "artist" : "C152 and AngerWave",
+            "name" : "Fatality Error",
+            "src" : "./music/C152 and AngerWave  - Fatality Error.mp3",
+            "duration" : "149"
+        },
+        {
+            "artist" : "Dj akeeni",
+            "name" : "Ily",
+            "src" : "./music/Dj akeeni - Ily.mp3",
+            "duration" : "120"
+            
+        },
+        {
+            "artist" : "Lost Eon",
+            "name" : "Neon Patrol",
+            "src" : "./music/Lost Eon - Neon Patrol.mp3",
+            "duration" : "137"
+        }
+         
+     
+    ]
+}

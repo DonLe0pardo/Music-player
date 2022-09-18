@@ -6,5 +6,5 @@
 + ul Собранно на webpack.
 
 Для Node.js :
-npm install - установить пакеты
-npm start - запуск проекта на dev-server
+* ul npm install - установить пакеты
+* ul npm start - запуск проекта на dev-server
